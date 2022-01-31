@@ -331,7 +331,7 @@ GameObject:
   - component: {fileID: 101632423}
   - component: {fileID: 101632422}
   m_Layer: 0
-  m_Name: water
+  m_Name: Water
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -360,9 +360,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 101632420}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6f8a96558d954ae4ea6ee111b59bad99, type: 3}
+  m_Script: {fileID: 11500000, guid: 9c7061fc7c7938d44a768de32952dc31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mushroomCountTotal: 3
+  snailCountTotal: 1
+  onionCountTotal: 1
 --- !u!136 &101632423
 CapsuleCollider:
   m_ObjectHideFlags: 0
