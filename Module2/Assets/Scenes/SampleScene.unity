@@ -1167,7 +1167,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!223 &133645183
 Canvas:
   m_ObjectHideFlags: 0
@@ -1177,8 +1177,8 @@ Canvas:
   m_GameObject: {fileID: 133645180}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_RenderMode: 2
+  m_Camera: {fileID: 1216111637}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -1196,9 +1196,9 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 133645180}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0.15251236, y: -0.8400198, z: 0.28731993, w: 0.43422803}
+  m_LocalPosition: {x: 0, y: 0, z: -1.078}
+  m_LocalScale: {x: 0.005, y: 0.005, z: 1}
   m_Children:
   - {fileID: 741715395}
   - {fileID: 343553199}
@@ -1206,12 +1206,12 @@ RectTransform:
   - {fileID: 1356281383}
   m_Father: {fileID: 0}
   m_RootOrder: 13
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 37.963, y: -125.496, z: -0.487}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -1.732, y: -0.051}
+  m_SizeDelta: {x: 1445.2, y: 672}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &150468472 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5356683119929991765, guid: 5e808cd947d268649a5084087c9198e6, type: 3}
@@ -2445,7 +2445,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerBar: {fileID: 343553201}
-  maxTime: 500
+  maxTime: 15
   timesUpText: {fileID: 925920573}
 --- !u!114 &343553201
 MonoBehaviour:
@@ -7153,6 +7153,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8136859426509267878, guid: 8502cf2291a0df145841e20dbb6c7e90, type: 3}
   m_PrefabInstance: {fileID: 1206758773}
   m_PrefabAsset: {fileID: 0}
+--- !u!20 &1216111637 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 2014920, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
+  m_PrefabInstance: {fileID: 862805908}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1223952848 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5356683119929991765, guid: 5e808cd947d268649a5084087c9198e6, type: 3}
@@ -7594,7 +7599,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -180}
+  m_AnchoredPosition: {x: 0, y: -150}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1356281384
