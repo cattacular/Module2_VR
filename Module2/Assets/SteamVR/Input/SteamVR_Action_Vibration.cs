@@ -46,7 +46,7 @@ namespace Valve.VR
         /// <param name="inputSource">The device you would like to execute the haptic action. Any if the action is not device specific.</param>
         public void Execute(float secondsFromNow, float durationSeconds, float frequency, float amplitude, SteamVR_Input_Sources inputSource)
         {
-            sourceMap[inputSource].Execute(secondsFromNow, durationSeconds, frequency, amplitude);
+            //sourceMap[inputSource].Execute(secondsFromNow, durationSeconds, frequency, amplitude);
         }
 
 
@@ -194,7 +194,7 @@ namespace Valve.VR
         /// <param name="inputSource">The device you would like to execute the haptic action. Any if the action is not device specific.</param>
         public void Execute(float secondsFromNow, float durationSeconds, float frequency, float amplitude)
         {
-            if (SteamVR_Input.isStartupFrame)
+            /*if (SteamVR_Input.isStartupFrame)
                 return;
 
             timeLastExecuted = Time.realtimeSinceStartup;
@@ -207,7 +207,7 @@ namespace Valve.VR
                 Debug.LogError("<b>[SteamVR]</b> TriggerHapticVibrationAction (" + fullPath + ") error: " + err.ToString() + " handle: " + handle.ToString());
 
             if (onExecute != null)
-                onExecute.Invoke(vibrationAction, inputSource, secondsFromNow, durationSeconds, frequency, amplitude);
+                onExecute.Invoke(vibrationAction, inputSource, secondsFromNow, durationSeconds, frequency, amplitude);*/
         }
     }
 
