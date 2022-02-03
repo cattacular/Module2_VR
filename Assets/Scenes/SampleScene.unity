@@ -4145,7 +4145,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerBar: {fileID: 343553201}
-  maxTime: 60
+  maxTime: 210
   timesUpText: {fileID: 925920573}
   hunger: {fileID: 983821146}
   hungerGrowl: {fileID: 8300000, guid: 140cb3a6c4fd47f44b24df502d1c98e1, type: 3}
