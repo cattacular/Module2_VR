@@ -9,6 +9,9 @@ public class HungerTimer : MonoBehaviour
     public float maxTime = 5f;
     float timeLeft;
     public GameObject timesUpText;
+    public AudioSource hunger;
+    public AudioClip hungerGrowl;
+    private int growlAmount = 0;
     void Start()
     {
        timesUpText.SetActive(false);
@@ -22,6 +25,21 @@ public class HungerTimer : MonoBehaviour
         {
             timeLeft -= Time.deltaTime;
             timerBar.fillAmount = timeLeft / maxTime;
+            if(timeLeft < maxTime*0.75 && growlAmount == 0)
+            {
+                hunger.PlayOneShot(hungerGrowl);
+                growlAmount++;
+            }
+            else if(timeLeft < maxTime*0.5 && growlAmount == 1)
+            {
+                hunger.PlayOneShot(hungerGrowl);
+                growlAmount++;
+            }
+            else if(timeLeft < maxTime*0.25 && growlAmount == 2)
+            {
+                hunger.PlayOneShot(hungerGrowl);
+                growlAmount++;
+            }
         }
         else 
         {

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class GameController : MonoBehaviour
 {
@@ -12,9 +13,9 @@ public class GameController : MonoBehaviour
     private int snailCount = 0;
     private int onionCount = 0;
     public GameObject winText;
-    public GameObject mushroomText;
-    public GameObject snailText;
-    public GameObject onionText;
+    public TextMeshProUGUI mushroomText;
+    public TextMeshProUGUI snailText;
+    public TextMeshProUGUI onionText;
     // Start is called before the first frame update
     void Start()
     {
@@ -46,6 +47,9 @@ public class GameController : MonoBehaviour
 
     private void setIngredientsText()
     {
+        mushroomText.text = "Mushrooms: " + mushroomCount.ToString() + "/" + mushroomCountTotal;
+        snailText.text = "Glow Snails: " + snailCount.ToString() + "/" + snailCountTotal;
+        onionText.text = "Cave Onions: " + onionCount.ToString() + "/" + onionCountTotal; 
     }
 
     private void OnTriggerEnter(Collider other)
@@ -67,6 +71,7 @@ public class GameController : MonoBehaviour
             hasUsed(other);
         }
 
+        setIngredientsText();
         HasWon();
     }
 
