@@ -12,10 +12,14 @@ public class GameController : MonoBehaviour
     private int snailCount = 0;
     private int onionCount = 0;
     public GameObject winText;
+    public GameObject mushroomText;
+    public GameObject snailText;
+    public GameObject onionText;
     // Start is called before the first frame update
     void Start()
     {
         winText.SetActive(false);
+        setIngredientsText();
     }
 
     // Update is called once per frame
@@ -38,6 +42,10 @@ public class GameController : MonoBehaviour
     private void hasUsed(Collider other) 
     {
         other.tag = "Used";
+    }
+
+    private void setIngredientsText()
+    {
     }
 
     private void OnTriggerEnter(Collider other)
